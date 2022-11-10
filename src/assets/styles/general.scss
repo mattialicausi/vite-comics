@@ -11,3 +11,44 @@ $hero-img: rgb(49, 132, 241);
 $footer: rgb(48, 48, 48);
 $bg-icon-footer: rgb(121, 121, 121);
 $white: #fff;
+
+#app{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.fs-s{
+    font-size: 15px;
+}
+
+.fs-m{
+    font-size: 25px;
+}
+
+.fs-lg{
+    font-size: 50px;
+}

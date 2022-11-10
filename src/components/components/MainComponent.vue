@@ -1,7 +1,7 @@
 <template>
-    <div>
-
-    </div>
+    <main>
+    
+    </main>
 </template>
 
 <script>
@@ -10,6 +10,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+    @use '../../assets/styles/general.scss' as *;
 
 </style>
