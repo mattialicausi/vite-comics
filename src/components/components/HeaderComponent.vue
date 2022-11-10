@@ -4,7 +4,7 @@
             <!-- CONTENITORE IMG HEADER -->
 
         <div class="container-logo-header d-flex align-items-center">
-            <img src="./../../assets/img/dc-logo.png" alt="Logo DC">
+            <img src="/public/img/dc-logo.png" alt="Logo DC">
         </div>
         
             <!-- CONTENITORE NAV BAR HEADER -->
