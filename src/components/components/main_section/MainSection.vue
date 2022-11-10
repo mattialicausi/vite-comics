@@ -1,8 +1,8 @@
 <template>
     <section class="main-section debug text-uppercase d-flex space-between align-items-center">
 
-        <ul class="d-flex align-items-center space-between">
-            <li class="d-flex space-between align-items-center" v-for="(card, index) in mainCard" :key="index">
+        <ul class="d-flex align-items-center space-around w-100">
+            <li class="d-flex align-items-center" v-for="(card, index) in mainCard" :key="index">
                 <img :src="card.image" :alt="'image of ' + card.text">
                 <h3>{{card.text}}</h3>
             </li>
@@ -54,7 +54,7 @@
 
     li img{
         height: 80px;
-        width: auto;
+        
     }
 
     h3 {

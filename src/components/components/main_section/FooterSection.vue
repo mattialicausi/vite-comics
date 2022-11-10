@@ -1,22 +1,46 @@
 <template>
-    <section class="footer-section debug d-flex">
-        <div class="left-footer-side h-100">
+    <section class="footer-section d-flex">
+
+        <!-- LEFT SIDE -->
+
+        <div class="left-footer-side ">
             <div class="container-list">
                 <h2 class="text-uppercase">dc comics</h2>
+                <ul v-for="(item, index) in DcComics" :key="index">
+                    <li>{{item}}</li>
+                </ul>
             </div>
 
             <div class="container-list">
                 <h2 class="text-uppercase">shop</h2>
+
+                <ul v-for="(item, index) in Shop" :key="index">
+                    <li>{{item}}</li>
+                </ul>
+
             </div>
 
             <div class="container-list">
                 <h2 class="text-uppercase">dc</h2>
+
+                <ul v-for="(item, index) in DCList" :key="index">
+                    <li>{{item}}</li>
+                </ul>
+
             </div>
 
             <div class="container-list">
                 <h2 class="text-uppercase">sites</h2>
+
+                <ul v-for="(item, index) in SitesList" :key="index">
+                    <li>{{item}}</li>
+                </ul>
+
             </div>
         </div>
+
+            <!-- RIGHT SIDE -->
+
         <div class="right-footer-side h-100">
         
         </div>
@@ -40,11 +64,11 @@
 
                 Shop: [
                     'Shop Dc',
-                    'Shop Dc Collectibles'
+                    'Shop Dc Collectibles',
                 ],
 
                 DCList: [
-                    'Terms Of Use'',
+                    'Terms Of Use',
                     'Privacy policy (New)',
                     'Ad Choices',
                     'Advertising',
@@ -54,7 +78,7 @@
                     'CPSC Certificates',
                     'Ratings',
                     'Shop Help',
-                    'Contact Us'
+                    'Contact Us',
                 ],
 
                 SitesList:[
@@ -80,7 +104,7 @@
 
     .left-footer-side{
         width: calc(100% / 2);
-        border: 1px solid red;
+        display: flex;
 
     }
 
@@ -91,11 +115,24 @@
         z-index: 500;
         color: $hero-img;
         width: calc(100% / 2);
-        border: 1px solid yellow;
     }
 
     h2{
         color: white;
+
+    }
+
+    .container-list{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10px;
+    }
+
+    .container-list li{
+        color: $white;
+        list-style: none;
+        padding: 5px;
+        font-size: 15px;
     }
 
 </style>

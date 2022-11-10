@@ -11,7 +11,7 @@
 
         <div class="container-nav-bar">
             <div class="nav-bar h-100">
-                <ul class="d-flex align-items-center">
+                <ul class="d-flex align-items-center ul-header h-100">
                     <li class="text-uppercase fs-s d-flex align-items-center" v-for="(items, index) in childNav" :key="index">{{items}}</li>
                 </ul>
             </div>
@@ -60,9 +60,9 @@
         }
     }
 
-    ul{
+    .ul-header{
         list-style: none;
-        height: 100%;
+        //height: 100%;
 
         li{
             padding: 10px;
