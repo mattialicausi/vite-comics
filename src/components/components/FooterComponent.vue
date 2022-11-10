@@ -9,13 +9,15 @@
 
                 <!-- FOOTER RIGHT SIDE -->
 
-            <div class="right-side d-flex align-items-center space-between">
+            <div class="right-side d-flex align-items-center">
                 <div class="follow-footer text-uppercase fs-m">follow us</div>
 
                     <!-- CONTAINER ICON SOCIAL FOOTER -->
 
-                <div class="container-icon d-flex align-items-center space-between">
-                    <div class="circle-icon" v-for="(icon, index) in iconList" :key="index">{{icon}}</div>
+                <div class="container-icon d-flex align-items-center">
+                    <div class="circle-icon" v-for="(social, index) in iconList" :key="index">
+                        <img :src="social" alt="social icon">
+                    </div>
                 </div>
             </div>
         </div>
@@ -28,11 +30,11 @@
         data() {
             return {
                 iconList: [
-                   '<i class="fa-brands fa-facebook"></i>',
-                   '<i class="fa-brands fa-twitter"></i>',
-                   '<i class="fa-brands fa-youtube"></i>',
-                   '<i class="fa-brands fa-pinterest"></i>',
-                   '<i class="fa-solid fa-location-dot"></i>',
+                   '/public/img/footer-facebook.png',
+                   '/public/img/footer-twitter.png',
+                   '/public/img/footer-youtube.png',
+                   '/public/img/footer-pinterest.png',
+                   '/public/img/footer-periscope.png',
                 ]
             }
         }
@@ -66,5 +68,14 @@
     .follow-footer{
         color: $hero-img;
         font-weight: bold;
+    }
+
+    .circle-icon{
+       
+
+        img{
+            color: $bg-icon-footer;
+            
+        }
     }
 </style>
