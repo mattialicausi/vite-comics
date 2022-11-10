@@ -12,7 +12,8 @@ $footer: rgb(48, 48, 48);
 $bg-icon-footer: rgb(121, 121, 121);
 $white: #fff;
 
-#app{
+
+.myWrapper{
     width: 1200px;
     margin: 0 auto;
 }
@@ -51,4 +52,8 @@ $white: #fff;
 
 .fs-lg{
     font-size: 50px;
+}
+
+.debug{
+    border: 1px solid black;
 }

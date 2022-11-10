@@ -1,8 +1,13 @@
 <template>
-    <header class="d-flex space-between">
+    <header class="d-flex space-between debug myWrapper">
+
+            <!-- CONTENITORE IMG HEADER -->
+
         <div class="container-logo-header d-flex align-items-center">
             <img src="./../../assets/img/dc-logo.png" alt="Logo DC">
         </div>
+        
+            <!-- CONTENITORE NAV BAR HEADER -->
 
         <div class="container-nav-bar">
             <div class="nav-bar h-100">
@@ -33,8 +38,7 @@
 
                 ]
             }
-        }
-        
+        } 
     }
 </script>
 
@@ -44,7 +48,6 @@
     header {
         height: 100px;
         width: 100%;
-        border: 1px solid red;
     }
 
     .container-logo-header{
@@ -68,9 +71,10 @@
 
         li:hover{
             border-bottom: 1px solid $hero-img;
+            color: $hero-img;
+            cursor: pointer;
+
         }
     }
-
-
 
 </style>

@@ -1,6 +1,6 @@
 <template>
     <main>
-    
+    ciao sono il main
     </main>
 </template>
 
