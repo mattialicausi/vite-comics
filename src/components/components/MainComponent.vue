@@ -1,5 +1,5 @@
 <template>
-    <main class="debug">
+    <main>
         <div class="container myWrapper debug">
 
               <section><HeaderSection/></section>

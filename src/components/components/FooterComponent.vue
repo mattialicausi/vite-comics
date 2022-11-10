@@ -1,6 +1,6 @@
 <template>
-    <footer class="debug">
-        <div class="container myWrapper debug h-100 d-flex space-between align-items-center">
+    <footer>
+        <div class="container myWrapper h-100 d-flex space-around align-items-center">
                  <!-- FOOTER LEFT SIDE -->
 
             <div class="left-side">
@@ -48,7 +48,7 @@
     footer{
         height: 100px;
         color: black;
-        background-color: $bg-icon-footer;
+        background-color: $footer;
     }
 
     .left-side{
@@ -68,14 +68,13 @@
     .follow-footer{
         color: $hero-img;
         font-weight: bold;
+        padding-right: 5px;
     }
 
     .circle-icon{
-       
-
+    
         img{
-            color: $bg-icon-footer;
-            
+            padding: 10px;
         }
     }
 </style>

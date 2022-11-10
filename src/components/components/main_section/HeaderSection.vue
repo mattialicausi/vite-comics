@@ -1,5 +1,5 @@
 <template>
-    <section class="header-section debug d-flex align-items-center">
+    <section class="header-section d-flex align-items-center">
 
         <h2>-->Content goes here </h2>
 

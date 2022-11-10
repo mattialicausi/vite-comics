@@ -1,5 +1,5 @@
 <template>
-    <header class="d-flex space-between debug myWrapper">
+    <header class="d-flex space-between myWrapper">
 
             <!-- CONTENITORE IMG HEADER -->
 

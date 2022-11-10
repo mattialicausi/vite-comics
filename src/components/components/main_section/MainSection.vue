@@ -1,5 +1,5 @@
 <template>
-    <section class="main-section debug text-uppercase d-flex space-between align-items-center">
+    <section class="main-section text-uppercase d-flex space-between align-items-center">
 
         <ul class="d-flex align-items-center space-around w-100">
             <li class="d-flex align-items-center" v-for="(card, index) in mainCard" :key="index">
