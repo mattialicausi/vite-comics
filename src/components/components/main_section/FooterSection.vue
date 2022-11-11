@@ -4,32 +4,32 @@
     <div class="myWrapper d-flex">
       <div class="left-footer-side">
         <div class="container-list">
-          <h2 class="text-uppercase">dc comics</h2>
-          <ul v-for="(item, index) in DcComics" :key="index">
+          <h2 class="text-uppercase footer-links">dc comics</h2>
+          <ul class="p-0 mb-0" v-for="(item, index) in DcComics" :key="index">
             <li>{{ item }}</li>
           </ul>
         </div>
 
         <div class="container-list">
-          <h2 class="text-uppercase">shop</h2>
+          <h2 class="text-uppercase footer-links">shop</h2>
 
-          <ul v-for="(item, index) in Shop" :key="index">
+          <ul class="p-0 mb-0" v-for="(item, index) in Shop" :key="index">
             <li>{{ item }}</li>
           </ul>
         </div>
 
         <div class="container-list">
-          <h2 class="text-uppercase">dc</h2>
+          <h2 class="text-uppercase footer-links">dc</h2>
 
-          <ul v-for="(item, index) in DCList" :key="index">
+          <ul class="p-0 mb-0" v-for="(item, index) in DCList" :key="index">
             <li>{{ item }}</li>
           </ul>
         </div>
 
         <div class="container-list">
-          <h2 class="text-uppercase">sites</h2>
+          <h2 class="text-uppercase footer-links">sites</h2>
 
-          <ul v-for="(item, index) in SitesList" :key="index">
+          <ul class="p-0 mb-0" v-for="(item, index) in SitesList" :key="index">
             <li>{{ item }}</li>
           </ul>
         </div>
@@ -72,48 +72,44 @@ export default {
 <style lang="scss">
 @use '../../../assets/styles/general.scss' as *;
 
-.footer-section {
-  background-image: url(/public/img/footer-bg.jpg);
-  height: max-content;
-}
+  .footer-section {
+    background-image: url(/public/img/footer-bg.jpg);
+    background-size: cover;
+    height: max-content;
+  }
 
-.left-footer-side {
-  width: calc(100% / 2);
-  height: 100%;
-  display: flex;
-}
+  .left-footer-side {
+    width: calc(100% / 2);
+    height: 100%;
+    display: flex;
+  }
 
-.right-footer-side {
-  background-image: url(/public/img/dc-logo-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 500;
-  color: $hero-img;
-  width: calc(100% / 2);
-  height: 100%;
-}
+  .right-footer-side {
+    background-image: url(/public/img/dc-logo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 500;
+    color: $hero-img;
+    width: calc(100% / 2);
+    height: 100%;
+  }
 
-h2 {
-  color: white;
-}
+  h2 {
+    color: white;
+  }
 
-.container-list {
-  display: flex;
-  flex-flow: column wrap;
-  padding: 10px;
-}
+  .container-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 10px;
+  }
 
-.container-list li {
-  color: $white;
-  list-style: none;
-  padding: 5px;
-  font-size: 15px;
-  text-align: start;
-  width: 100%;
-}
+  .container-list li {
+    color: $white;
+    list-style: none;
+    padding: 5px;
+    font-size: 15px;
+  }
 
-ul{
-    margin: 0;
-    padding: 0;
-}
 </style>

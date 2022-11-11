@@ -6,10 +6,9 @@
 
                 <div>
                     <div class="container-content myWrapper h-100 text-uppercase">
-                        <ul class="container-movie row pt-4">
+                        <ul class="container-movie row pt-4 mb-0">
                             <HeaderSection v-for="(item, index) in listMovie" :key="index" :movie="item" />
                         </ul>
-                       
                     </div>
                 </div>
              
@@ -58,6 +57,7 @@ import MainSection from './main_section/MainSection.vue';
 
     .container-movie{
         list-style: none;
+        padding: 0;
     }
 
 </style>
