@@ -1,8 +1,10 @@
 <template>
-    <section class="header-section d-flex align-items-center">
+    <section class="header-section-main">
 
-        <h2>-->Content goes here </h2>
-
+        <div class="container-content myWrapper debug h-100">
+        
+        </div>
+    
     </section>
 </template>
 
@@ -12,13 +14,13 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @use '../../../assets/styles/general.scss' as *;
 
-    .header-section{
-        height: 150px;
+    .header-section-main{
+        height: calc(100vh - 40vh);
         background-color: $contents;
-        color: white;
+        width: 100%;
     }
 
 </style>

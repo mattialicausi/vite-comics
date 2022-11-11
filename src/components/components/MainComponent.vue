@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container myWrapper debug">
+        <div class="container">
 
               <section><HeaderSection/></section>
 
@@ -25,8 +25,8 @@ import MainSection from './main_section/MainSection.vue';
 <style lang="scss">
     @use '../../assets/styles/general.scss' as *;
 
-    .container{
-        height: calc(100vh - 200px);
-    }
+    // .container{
+    //     height: calc(100vh - 200px);
+    // }
 
 </style>

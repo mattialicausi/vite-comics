@@ -1,12 +1,15 @@
 <template>
-    <section class="main-section text-uppercase d-flex space-between align-items-center">
+    <section class="main-section">
+        <div class="myWrapper text-uppercase h-100">
+            <ul class="d-flex align-items-center space-around w-100 h-100">
+                <li class="d-flex align-items-center " v-for="(card, index) in mainCard" :key="index">
+                    <img :src="card.image" :alt="'image of ' + card.text">
+                    <h3>{{card.text}}</h3>
+                </li>
+            </ul>
+        </div>
 
-        <ul class="d-flex align-items-center space-around w-100">
-            <li class="d-flex align-items-center" v-for="(card, index) in mainCard" :key="index">
-                <img :src="card.image" :alt="'image of ' + card.text">
-                <h3>{{card.text}}</h3>
-            </li>
-        </ul>
+        
 
     </section>
 </template>

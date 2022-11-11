@@ -2,8 +2,8 @@
     <section class="footer-section d-flex">
 
         <!-- LEFT SIDE -->
-
-        <div class="left-footer-side ">
+        <div class="myWrapper d-flex">
+            <div class="left-footer-side ">
             <div class="container-list">
                 <h2 class="text-uppercase">dc comics</h2>
                 <ul v-for="(item, index) in DcComics" :key="index">
@@ -39,11 +39,13 @@
             </div>
         </div>
 
-            <!-- RIGHT SIDE -->
 
-        <div class="right-footer-side h-100">
-        
+
+            <!-- RIGHT SIDE -->
+            <div class="right-footer-side h-100"></div>
         </div>
+
+       
 
     </section>
 </template>
@@ -99,11 +101,12 @@
 
     .footer-section{
         background-image: url(/public/img/footer-bg.jpg);
-        height: calc(100vh - 500px);
+        height: max-content;
     }
 
     .left-footer-side{
         width: calc(100% / 2);
+        height: 100%;
         display: flex;
 
     }
@@ -115,6 +118,8 @@
         z-index: 500;
         color: $hero-img;
         width: calc(100% / 2);
+        height: 100%;
+
     }
 
     h2{

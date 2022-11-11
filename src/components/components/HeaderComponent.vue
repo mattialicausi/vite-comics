@@ -1,52 +1,74 @@
 <template>
-    <header class="d-flex space-between myWrapper">
+    <header>
 
             <!-- CONTENITORE IMG HEADER -->
-
-        <div class="container-logo-header d-flex align-items-center">
-            <img src="/public/img/dc-logo.png" alt="Logo DC">
-        </div>
+        <div class="top-header d-flex space-between myWrapper">
+            <div class="container-logo-header d-flex align-items-center">
+                <img src="/public/img/dc-logo.png" alt="Logo DC">
+            </div>
         
             <!-- CONTENITORE NAV BAR HEADER -->
 
-        <div class="container-nav-bar">
-            <div class="nav-bar h-100">
-                <ul class="d-flex align-items-center ul-header h-100">
-                    <li class="text-uppercase fs-s d-flex align-items-center" v-for="(items, index) in childNav" :key="index">{{items}}</li>
-                </ul>
-            </div>
-        
+            <div class="container-nav-bar">
+                <div class="nav-bar h-100">
+                    <ul class="d-flex align-items-center ul-header h-100">
+                        <li class="text-uppercase fs-s d-flex align-items-center" v-for="(items, index) in childNav" :key="index">{{items}}</li>
+                    </ul>
+                </div>
+            </div>  
         </div>
+
+
+        <!-- CONTAINER JUMBO -->
+
+    <div class="jumbo">
+        <HeaderJumbo/>
+    </div>
+
     </header>
+
 </template>
 
 <script>
-    export default {
-        data(){
-            return {
-                childNav: [
-                    'characters',
-                    'comics',
-                    'movies',
-                    'tv',
-                    'games',
-                    'collectibles',
-                    'videos',
-                    'fans',
-                    'news',
-                    'shop',
+import HeaderJumbo from './header_section/HeaderJumbo.vue';
 
-                ]
-            }
-        } 
-    }
+    export default {
+    data() {
+        return {
+            childNav: [
+                "characters",
+                "comics",
+                "movies",
+                "tv",
+                "games",
+                "collectibles",
+                "videos",
+                "fans",
+                "news",
+                "shop",
+            ]
+        };
+    },
+    components: { HeaderJumbo }
+}
 </script>
 
 <style lang="scss">
     @use '../../assets/styles/general.scss' as *;
 
+    .top-header{
+        height: 10vh;
+    }
+
+    .jumbo{
+        height: 30vh;
+        background-image: url(../../../public/img/jumbotron.jpg);
+        background-size: cover;
+
+
+    }
+
     header {
-        height: 100px;
         width: 100%;
     }
 
@@ -76,5 +98,6 @@
 
         }
     }
+
 
 </style>
