@@ -1,15 +1,18 @@
 <template>
-    <section class="header-section-main">
+                <li class="container-img-movie">
+                    <img :src="movie.thumb" :alt="movie.series">
+                    <h4>{{movie.series}}</h4>
+                </li>
 
-        <div class="container-content myWrapper debug h-100">
-        
-        </div>
-    
-    </section>
 </template>
 
 <script>
+
     export default {
+
+        props: [
+            'movie'
+        ],
         
     }
 </script>
@@ -17,10 +20,15 @@
 <style lang="scss" scoped>
     @use '../../../assets/styles/general.scss' as *;
 
-    .header-section-main{
-        height: calc(100vh - 40vh);
-        background-color: $contents;
-        width: 100%;
+    .container-img-movie img{
+        height: 250px;     
+        max-width: auto;
+       
+    }
+
+    h4{
+
+        word-wrap: break-word;
     }
 
 </style>
