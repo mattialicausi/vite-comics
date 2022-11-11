@@ -1,5 +1,5 @@
 <template>
-                <li class="container-img-movie">
+                <li class="container-img-movie col-2">
                     <img :src="movie.thumb" :alt="movie.series">
                     <h4>{{movie.series}}</h4>
                 </li>
@@ -23,12 +23,12 @@
     .container-img-movie img{
         height: 250px;     
         max-width: auto;
-       
+        flex-wrap: wrap;
     }
 
     h4{
-
         word-wrap: break-word;
+        font-size: 15px;
     }
 
 </style>

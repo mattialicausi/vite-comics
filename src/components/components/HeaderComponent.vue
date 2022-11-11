@@ -3,7 +3,7 @@
 
             <!-- CONTENITORE IMG HEADER -->
         <div class="top-header d-flex space-between myWrapper">
-            <div class="container-logo-header d-flex align-items-center">
+            <div class="container-logo-header d-flex align-items-center pb-2">
                 <img src="/public/img/dc-logo.png" alt="Logo DC">
             </div>
         
@@ -64,8 +64,6 @@ import HeaderJumbo from './header_section/HeaderJumbo.vue';
         height: 30vh;
         background-image: url(../../../public/img/jumbotron.jpg);
         background-size: cover;
-
-
     }
 
     header {
@@ -84,7 +82,6 @@ import HeaderJumbo from './header_section/HeaderJumbo.vue';
 
     .ul-header{
         list-style: none;
-        //height: 100%;
 
         li{
             padding: 10px;

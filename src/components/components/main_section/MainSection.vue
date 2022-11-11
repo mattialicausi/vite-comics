@@ -4,7 +4,7 @@
             <ul class="d-flex align-items-center space-around w-100 h-100">
                 <li class="d-flex align-items-center " v-for="(card, index) in mainCard" :key="index">
                     <img :src="card.image" :alt="'image of ' + card.text">
-                    <h3>{{card.text}}</h3>
+                    <h3 class="bubtitle-main-section">{{card.text}}</h3>
                 </li>
             </ul>
         </div>
@@ -60,7 +60,7 @@
         
     }
 
-    h3 {
+    .bubtitle-main-section{
         padding-left: 5px;
         font-size: 13px;
     }

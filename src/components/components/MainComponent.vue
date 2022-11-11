@@ -5,8 +5,8 @@
               <section class="header-section-main h-100">
 
                 <div>
-                    <div class="container-content myWrapper debug h-100 text-uppercase">
-                        <ul class="container-movie d-flex wrap">
+                    <div class="container-content myWrapper h-100 text-uppercase">
+                        <ul class="container-movie row pt-4">
                             <HeaderSection v-for="(item, index) in listMovie" :key="index" :movie="item" />
                         </ul>
                        
@@ -54,12 +54,9 @@ import MainSection from './main_section/MainSection.vue';
     .container-content{
         width: calc(100% / 6);
         margin: 0 auto;
-        
-
     }
 
     .container-movie{
-        //width: calc(100% / 6);
         list-style: none;
     }
 
